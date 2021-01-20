@@ -1252,10 +1252,11 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 ================================================== */
 /*-- Main slide --*/
 .banner-carousel .banner-carousel-item {
-  height: 700px;
+  /* height: 700px; */
   color: #fff;
   background-position: 50% 50%;
   background-size: cover;
+  padding: 80px 0;
 }
 /* .banner-carousel{
   position: relative;
@@ -1286,7 +1287,15 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   opacity: .7;
   background: #000;
 }
+.logoimg{
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 
+}
+.logoimg img{
+  width: 100%;
+}
 .slider-content h3{
   position: relative;
   z-index: 9999;
@@ -1510,6 +1519,15 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   width: 100%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+.slick-track{
+  display: flex;
+}
+.banner-carousel .banner-carousel-item{
+  min-height: 100%;
+}
+.slick-list{
+  display: flex !important;
 }
 
 @media (max-width: 767px) {
