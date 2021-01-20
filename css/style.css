@@ -249,6 +249,16 @@ a:focus {
   border: 0;
   overflow: hidden;
 }
+.slider-content h2{
+  position: relative;
+  z-index: 999;
+  opacity: 1 !important;
+}
+.slider-content h3{
+  position: relative;
+  z-index: 999;
+  opacity: 1 !important;
+}
 
 /* Dropcap */
 .dropcap {
@@ -1247,7 +1257,46 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   background-position: 50% 50%;
   background-size: cover;
 }
+/* .banner-carousel{
+  position: relative;
+} */
+/* .banner-carousel::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #000;
+  opacity: .7;
+} */
+.banner-carousel{
+  position: relative;
+}
+.banner-carousel-item{
+  position: relative;
+}
+.banner-carousel-item:before{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  opacity: .7;
+  background: #000;
+}
 
+.slider-content h3{
+  position: relative;
+  z-index: 9999;
+  opacity: 1 !important;
+}
+.slider-content h2{
+  position: relative;
+  z-index: 9999;
+  opacity: 1 !important;
+}
 @media (max-width: 991px) {
   .banner-carousel .banner-carousel-item {
     height: 550px;
