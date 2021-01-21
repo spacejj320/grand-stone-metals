@@ -138,7 +138,7 @@
   <!--/ Navigation end -->
 </header>
 <!--/ Header end -->
-
+<div id="snackbar">message send</div>
 <div class="banner-carousel banner-carousel-1 mb-0">
   <div class="banner-carousel-item" style="background-image:url(images/banner/bg2.jpg)">
     <div class="slider-content">
@@ -717,7 +717,11 @@
         <h3 class="column-title">We love to hear</h3>
         <!-- contact form works with formspree.io  -->
         <!-- contact form activation doc: https://docs.themefisher.com/constra/contact-form/ -->
+<<<<<<< HEAD
+        <form id="contact-form" action="https://docs.google.com/forms/u/3/d/e/1FAIpQLScDZB3cBct2W8LY2P2-u1EeDQEX-B_oOHvub0HUy0G-2f0TVg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;" role="form">
+=======
         <form id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLScDZB3cBct2W8LY2P2-u1EeDQEX-B_oOHvub0HUy0G-2f0TVg/" method="post" role="form">
+>>>>>>> 69dd7d810b4e746926aa08ed68c71b2edf979d9c
           <div class="error-container"></div>
           <div class="row">
             <div class="col-md-4">
@@ -870,7 +874,21 @@
 
   <!-- Javascript Files
   ================================================== -->
+  
 
+
+  <script type="text/javascript">var submitted=false;
+  function toast() {
+      var x = document.getElementById("snackbar");
+      x.className = "show";
+      setTimeout(function(){ x.className = x.className.replace("show", "");
+      window.location='index.html';
+    }, 3000);
+      console.log("called");
+    }
+  </script>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
+  onload="if(submitted) {toast();}"></iframe>
   <!-- initialize jQuery Library -->
   <script src="plugins/jQuery/jquery.min.js"></script>
   <!-- Bootstrap jQuery -->
