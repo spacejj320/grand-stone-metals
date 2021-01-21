@@ -1,6 +1,14 @@
 jQuery(function ($) {
 	'use strict';
 
+	$("a.toscroll").on('click',function(e) {
+		var url = e.target.href;
+		var hash = url.substring(url.indexOf("#")+1);
+		$('html, body').animate({
+			scrollTop: $('#'+hash).offset().top
+		}, 2000);
+		return false;
+	});
 	/* ----------------------------------------------------------- */
 	/*  Fixed header
 	/* ----------------------------------------------------------- */
@@ -31,7 +39,7 @@ jQuery(function ($) {
 		}
 		fixedHeader();
 
-
+		
 		// Count Up
 		function counter() {
 			var oTop;
